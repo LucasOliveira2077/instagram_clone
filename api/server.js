@@ -12,3 +12,7 @@ let port = 8080;
 app.listen(port);
 
 console.log('o servidor esta funcionando');
+
+app.get('/', (req, res) => {
+    res.send({mensagem: 'E ai tudo bem?'});
+});
