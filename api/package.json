@@ -1,0 +1,26 @@
+{
+    "name": "instagram_clone",
+    "version": "1.0.0",
+    "description": "clone do instagram",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LucasOliveira2077/instagram_clone.git"
+    },
+    "author": "Lucas de Oliveira",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/LucasOliveira2077/instagram_clone/issues"
+    },
+    "homepage": "https://github.com/LucasOliveira2077/instagram_clone#readme",
+    "dependencies": {
+        "body-parser": "^1.19.2",
+        "express": "^4.17.3",
+        "mongodb": "^4.4.1",
+        "nodemon": "^2.0.15"
+    }
+}
