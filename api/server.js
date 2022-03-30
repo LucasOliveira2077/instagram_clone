@@ -11,19 +11,21 @@ app.use(bodyParser.json());
 let port = 8080;
 app.listen(port);
 
-let db = new mongodb.db(
+//criando uma variavel db que usamos como objeto de conexao com o banco
+let db = new mongodb.Db(
     'instagram',
-    new mongo.Server('localhost', 27017, {})
-    
+    new mongo.server('localhost', 27017, {})
 );
 
-console.log('o servidor esta funcionando');
 
+console.log('o servidor esta funcionando' + port);
 app.get('/', (req, res) => {
     res.send({mensagem: 'E ai tudo bem?'});
 });
 
 app.post('/api', (req, res) => {
-    let dados = req.body;//os parametros de bodyparser serao carregados nesse body
-    res.send(dados);
+    let dados =  req.body;
+    
+
 });
+
